@@ -1,4 +1,4 @@
-# scRNAseq Immune Atlas
+# single-cell-ibd-immune-atlas
 
 Single-cell RNA-seq analysis of immune remodeling in inflammatory bowel disease using Python and Scanpy.
 
