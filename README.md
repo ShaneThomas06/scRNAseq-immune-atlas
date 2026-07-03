@@ -1,4 +1,4 @@
-# single-cell-ibd-immune-atlas
+<img width="1671" height="803" alt="image" src="https://github.com/user-attachments/assets/74d0a518-764e-4255-bf6e-43b647028dac" /># single-cell-ibd-immune-atlas
 
 Single-cell RNA-seq analysis of immune remodeling in inflammatory bowel disease using Python and Scanpy.
 
@@ -168,7 +168,7 @@ Current table outputs include:
 - Cluster marker gene tables
 - Macrophage differential expression results
 - Macrophage pathway enrichment results
-
+ 
 ## Methods
 
 Detailed analysis methods are described in [docs/methods.md](docs/methods.md).
@@ -210,6 +210,9 @@ data/processed/immune_cells_with_metadata.h5ad
 ```
 
 This file is intentionally excluded from Git tracking.
+
+The streamlit dashboard can be run locally from streamlitapp.py.
+Screenshot from streamlit dashboard: <img width="1671" height="803" alt="image" src="https://github.com/user-attachments/assets/44ae7648-eeb5-4149-b623-15e1e928ee0a" />
 
 ## Reproducibility
 
@@ -275,3 +278,5 @@ Next steps:
 - Add pathway enrichment for additional cell types
 - Implement donor-aware pseudobulk differential expression
 - Build a Streamlit dashboard for exploring immune clusters, marker genes, and disease-associated pathways
+
+
