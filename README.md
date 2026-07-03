@@ -77,3 +77,88 @@ data/                Raw and processed data, not tracked in Git
 notebooks/           Analysis notebooks
 results/figures/     Saved figures
 results/tables/      Saved result tables
+src/immune_atlas/    Reusable project code
+```
+
+## Notebooks
+
+```text
+01_data_exploration.ipynb
+```
+
+Loads the immune-cell dataset, attaches metadata, summarizes tissue conditions, and explores immune cell composition.
+
+```text
+02_marker_gene_analysis.ipynb
+```
+
+Identifies marker genes for immune clusters and validates immune cell annotations using canonical marker genes.
+
+```text
+03_disease_associated_expression.ipynb
+```
+
+Compares macrophage gene expression between healthy and inflamed tissue to identify disease-associated inflammatory programs.
+
+```text
+04_pathway_enrichment_analysis.ipynb
+```
+
+Performs Gene Ontology enrichment analysis on macrophage genes upregulated in inflamed tissue and identifies inflammatory immune pathways.
+
+## Results
+
+Key outputs are saved in:
+
+```text
+results/figures/
+results/tables/
+```
+
+The analysis currently includes immune composition summaries, marker gene validation, macrophage differential expression, and macrophage pathway enrichment.
+
+## Example Figures
+
+### Immune Cell Composition Across Tissue Conditions
+
+![Immune cell composition heatmap](results/figures/top_immune_clusters_by_condition_heatmap.png)
+
+### Canonical Immune Marker Validation
+
+![Canonical immune marker dot plot](results/figures/canonical_marker_dotplot.png)
+
+### Macrophage Inflammatory Gene Expression
+
+![Macrophage inflammatory gene dot plot](results/figures/macrophage_inflammatory_gene_dotplot.png)
+
+### Macrophage Pathway Enrichment
+
+![Macrophage pathway enrichment](results/figures/macrophage_go_enrichment_filtered.png)
+
+## Tools
+
+- Python
+- Scanpy
+- AnnData
+- pandas
+- NumPy
+- matplotlib
+- seaborn
+- gseapy
+- scikit-learn
+- Streamlit
+
+## Dataset
+
+This project uses a public single-cell RNA-seq dataset from inflammatory bowel disease intestinal tissue. The analysis currently focuses on the immune-cell compartment.
+
+Large raw and processed data files are not committed to this repository. The repository tracks notebooks, code, figures, and result tables.
+
+
+Next steps:
+
+- Extend disease-associated expression analysis to additional immune populations
+- Add pathway enrichment for additional cell types
+- Improve reusable analysis code in `src/immune_atlas/`
+- Build a Streamlit dashboard for exploring immune clusters, marker genes, and disease-associated pathways
+```
